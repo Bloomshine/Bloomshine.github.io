@@ -6,14 +6,14 @@ body, html {
     height: 100%;
 }
 
-.animated-background {
+.background-animation {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: linear-gradient(135deg, #3498db, #f4791f, #f1c40f);
-    background-size: 400% 400%;
+    background-size: 300% 300%; /* Adjust the background size as needed */
     animation: gradient 15s ease infinite;
     display: flex;
     align-items: center;
@@ -68,4 +68,3 @@ a {
         background-position: 0% 50%;
     }
 }
- 
