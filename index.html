@@ -3,122 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John H. Whitmore - Academic Personal Page</title>
+    <meta name="description" content="Welcome to my GitHub profile">
+    <title>Your Name's GitHub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        /* Custom styles for your academic personal page */
         body, html {
             margin: 0;
             padding: 0;
-            height: 100%;
-            overflow: auto; /* Enable vertical scroll */
-        }
-
-        .background-animation {
-            position: fixed;
-            top: 0;
-            left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, #3498db, #f4791f, #f1c40f);
-            background-size: 300% 300%;
-            animation: gradient 15s ease infinite;
             display: flex;
-            align-items: center;
             justify-content: center;
-            color: #fff;
-            text-align: center;
+            align-items: center;
+            background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4, #fcb69f, #a1c4fd, #c2e9fb);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            font-family: 'Poppins', sans-serif;
         }
 
-        .content {
-            background: rgba(0, 0, 0, 0.6);
-            padding: 20px;
-            border-radius: 10px;
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
 
         h1 {
-            font-size: 36px;
-            margin-bottom: 10px;
-        }
-
-        h2 {
-            color: #007bff;
-            font-size: 24px;
-            margin-top: 20px;
+            color: white;
+            font-size: 3em;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
         }
 
         p {
-            font-size: 18px;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        ul li {
-            margin: 5px 0;
-        }
-
-        a {
-            text-decoration: none;
-            color: #fff;
-        }
-
-        .profile-photo {
+            color: white;
+            font-size: 1.5em;
             margin: 20px 0;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
         }
 
-        .profile-photo img {
-            max-width: 100%;
-            border-radius: 50%;
+        .button {
+            padding: 15px 30px;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: none;
+            font-size: 1.2em;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.5s, transform 0.3s;
         }
 
-        @keyframes gradient {
-            0% {
-                background-position: 0% 50%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
-            100% {
-                background-position: 0% 50%;
-            }
+        .button:hover {
+            background-color: rgba(255, 255, 255, 0.4);
+            transform: scale(1.05);
+        }
+
+        .container {
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <div class="background-animation">
-        <div class="content">
-            <div class="photo"> 
-                <img src="your-photo.jpg" alt="John H. Whitmore"> 
-            </div>
-            <h1>John H. Whitmore</h1>
-            <p>Assistant Professor of Geology</p>
-            <p>Department of Earth Sciences</p>
-            <p>University of Academicville</p>
-            <p>Email: jwhitmore@example.com</p>
-            <p>Phone: +1-123-456-7890</p>
-            <h2>About Me</h2>
-            <p>
-                I am an Assistant Professor of Geology in the Department of Earth Sciences at the University of Academicville. My research focuses on the geological processes that shape our planet.
-            </p>
-            <h2>Research Interests</h2>
-            <p>
-                My research interests include sedimentary geology, paleontology, and the history of Earth's climate.
-            </p>
-            <h2>Research Projects</h2>
-            <p>
-                - Project 1: "Exploring Ancient Fossils"<br> 
-                - Project 2: "Sedimentary Rock Formation"<br>
-                - Project 3: "Climate Change Through the Ages"
-            </p>
-            <h2>Selected Publications</h2>
-            <ul>
-                <li><a href="#">Publication 1</a></li>
-                <li><a href="#">Publication 2</a></li>
-                <!-- Add more publications as needed -->
-            </ul>
-        </div>
+    <div class="container">
+        <h1>Welcome to My GitHub Profile</h1>
+        <p>I'm passionate about Visual and Tactile Multimodal Fusion!</p>
+        <button class="button">Check My Projects</button>
     </div>
+
+    <script>
+        // Add interactivity to button (e.g., scroll to projects)
+        document.querySelector('.button').addEventListener('click', function() {
+            window.location.href = "https://github.com/your-username?tab=repositories";
+        });
+    </script>
 </body>
 </html>
